@@ -65,17 +65,14 @@ The installer will:
 Ctrl+b %    Ctrl+b "    Ctrl+b o    Ctrl+b "    Ctrl+b o
 ```
 
-**After (1 activation + 5 simple keys):**
+**After (1 activation + 5 simple keys + 1 deactivation):**
 ```
-Ctrl+b Ctrl+p    %    "    o    "    Escape
+Ctrl+b Ctrl+p    %    "    o    "  o  Escape (or Ctrl+p)
 ```
 
 ## 📖 Documentation
 
 - [Installation Guide](docs/INSTALLATION.md)
-- [User Guide](docs/USER_GUIDE.md)
-- [Configuration](docs/CONFIGURATION.md)
-- [Troubleshooting](docs/TROUBLESHOOTING.md)
 - [FAQ](docs/FAQ.md)
 
 ## 🎮 Commands Reference
@@ -121,8 +118,6 @@ bind-key -T prefix C-p \
 set-option -g status-style "bg=colour208,fg=black,bold" \; \
 ```
 
-See [Configuration Guide](docs/CONFIGURATION.md) for more options.
-
 ## 🛠️ Requirements
 
 - tmux 2.9 or later
@@ -166,19 +161,21 @@ Modal commands → exec-modal-exit.sh → Exit to normal mode
 ## 🐛 Known Issues
 
 - Some terminal emulators may not support all key combinations
+- Some commands don't function in persistent mode (e.g. Ctrl+b : doesn't work to my knowledge)
 - Modal commands exit persistent mode by design (this is a feature, not a bug!)
 
 ## 📈 Roadmap
 
-- [ ] Support for custom keybindings in persistent mode
+- [ ] Dynamic command support (parses existing commands and saves them to a table rather than using a premade table)
 - [ ] Optional sound/visual notifications
 - [ ] Per-session persistent mode settings
 - [ ] Integration with tmux plugins
+- [ ] Integration wtih tmux itself??? (feel free to make an official integration of this!)
 
 ## 💬 Support
 
-- 🐛 [Report a bug](https://github.com/YOUR_USERNAME/tmux-persistent-prefix/issues)
-- 💡 [Request a feature](https://github.com/YOUR_USERNAME/tmux-persistent-prefix/issues)
+- 🐛 [Report a bug](https://github.com/49115566/tmux-persistent-prefix/issues)
+- 💡 [Request a feature](https://github.com/49115566/tmux-persistent-prefix/issues)
 - 📖 [Read the docs](docs/)
 
 ---

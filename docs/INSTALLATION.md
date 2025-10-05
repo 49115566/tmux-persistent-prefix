@@ -3,7 +3,7 @@
 ## Quick Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/tmux-persistent-prefix.git
+git clone https://github.com/49115566/tmux-persistent-prefix.git
 cd tmux-persistent-prefix
 chmod +x install.sh
 ./install.sh
